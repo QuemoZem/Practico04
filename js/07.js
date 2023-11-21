@@ -88,9 +88,8 @@ class AgendaTelefonica {
   }
 }
 
+const agenda = new AgendaTelefonica(); // cambie de lugar la variable para poder acceder al terminar la funcion
 function mostrarMenu() {
-  const agenda = new AgendaTelefonica();
-
   while (true) {
     const opcion = prompt(
       "Seleccione una opción:\n1. Añadir Contacto\n2. Buscar Contacto\n3. Lista Contactos\n4. Eliminar Contacto\n5. Huecos Libres\n6. Salir"
