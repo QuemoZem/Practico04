@@ -13,41 +13,45 @@ Por último, indicar cuál de los 2 objetos “libros” tiene más páginas.
  */
 
 class Libro {
+  #isbn;
+  #titulo;
+  #autor;
+  #numeroPaginas;
   constructor(ISBN, titulo, autor, numeroPaginas) {
-    this.isbn = ISBN;
-    this.titulo = titulo;
-    this.autor = autor;
-    this.numeroPaginas = numeroPaginas;
+    this.#isbn = ISBN;
+    this.#titulo = titulo;
+    this.#autor = autor;
+    this.#numeroPaginas = numeroPaginas;
   }
 
   get isbn() {
-    return this._isbn;
+    return this.#isbn;
   }
 
   set isbn(nuevoISBN) {
-    this._isbn = nuevoISBN;
+    this.#isbn = nuevoISBN;
   }
 
   get titulo() {
-    return this._titulo;
+    return this.#titulo;
   }
 
   set titulo(nuevoTitulo) {
-    this._titulo = nuevoTitulo;
+    this.#titulo = nuevoTitulo;
   }
   get autor() {
-    return this._autor;
+    return this.#autor;
   }
 
   set autor(nuevoAutor) {
-    this._autor = nuevoAutor;
+    this.#autor = nuevoAutor;
   }
   get numeroPaginas() {
-    return this._numeroPaginas;
+    return this.#numeroPaginas;
   }
 
   set numeroPaginas(nuevoPaginas) {
-    this._numeroPaginas = nuevoPaginas;
+    this.#numeroPaginas = nuevoPaginas;
   }
 
   mostrarLibro() {
